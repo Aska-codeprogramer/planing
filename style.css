@@ -1,0 +1,107 @@
+body {
+    background-image: linear-gradient(135deg, #153677, #4e085f);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-1 {
+    margin: 25px auto;
+    width: 500px;
+    background-color: #aeaeaa;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    transition: 1s;
+    box-shadow: 10px 10px 3px #cbd2e4;
+}
+.container-1:hover {
+    box-shadow: 0 0 3px 10px #cbd2e4;
+}
+.heading-1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    cursor: default;
+}
+input {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+    width: 480px;
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: black;
+}
+.rumah-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+button {
+    text-align: center;
+    width: 90px;
+    height: 35px ;
+    border-radius: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: black;
+    margin-bottom: 4px;
+}
+ul li {
+    box-sizing: border-box;
+    border: 1px solid black;
+    list-style: none;
+    font-size: 18px;
+    padding: 5px 5px 5px 5px;
+    user-select: none;
+    margin-left: -15px;
+    margin-right: 25px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    position: relative;
+    text-transform: capitalize;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #cbd2e4;
+    color: black;
+}
+ul li:active {
+    color: #aeaeaa;
+    text-decoration: line-through;
+}
+ul li.centang::before {
+    background-image: url(centang.png);
+}
+ul li span {
+    text-align: center;
+    right: 0;
+    height: 30px;
+    font-size: 25px;
+    position: absolute;
+    line-height: 20px;
+    margin-right: 15px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto 0;
+}
+@media (max-width:600px) {
+    .container-1 {
+        width: 90%;
+    }
+    input {
+        margin-left: 15px;
+        margin-right: 5px;
+        width: 91%;
+    }
+    button {
+        width: 80px;
+        height: 35px;
+        box-sizing: border-box;
+    }
+}
